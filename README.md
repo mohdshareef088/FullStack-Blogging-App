@@ -1,6 +1,6 @@
 ##📘 **FullStack Blogging App – CI/CD**
 
-This is a full‑stack blogging application built using Jenkins +Docker +terraform +Kubernetes. It allows users to create, edit, delete, and publish blog posts with authentication and role‑based access. The project is containerized using Docker and deployed using CI/CD pipelines.
+This is a full‑stack blogging application built with Jenkins, Docker, Terraform, and Kubernetes. It allows users to create, edit, delete, and publish blog posts with authentication and role‑based access. The project is containerized using Docker and deployed using CI/CD pipelines.
 
 ---
 ## **Architecture Diagram**
@@ -17,12 +17,13 @@ This is a full‑stack blogging application built using Jenkins +Docker +terrafo
 ```
 ---
 ##🛠️ **Prerequisites**
-Jenkins - Ubuntu 24.04 LTS 
-Java - 21jdk
-SonarQube - as a Docker image
-Nexus-Artifactory - as a Docker image
-Monitoring Tools- Grafana, Prometheus, blackbox
-Custom ports- 2000-11000
+Ubuntu 24.04 LTS 
+Java 21 (OpenJDK)
+Jenkins - CI/CD  
+SonarQube - Docker container
+Nexus-Artifactory - Docker container
+Monitoring & Observability- Grafana, Prometheus, blackbox
+Custom ports- 2000-11000 required for Jenkins jobs & monitoring tools
 
 ---
 
