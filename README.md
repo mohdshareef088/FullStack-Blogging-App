@@ -1,53 +1,33 @@
-##📘**FullStack Blogging App – CI/CD**
+##📘 **FullStack Blogging App – CI/CD**
 
 This is a full‑stack blogging application built using Jenkins +Docker +terraform +Kubernetes. It allows users to create, edit, delete, and publish blog posts with authentication and role‑based access. The project is containerized using Docker and deployed using CI/CD pipelines.
 
 ---
-
-##🏗️**Architecture Overview**
-
-- **Frontend:** React, TailwindCSS  
-- **Backend:** Node.js, Express.js  
-- **Database:** MongoDB  
-- **Authentication:** JWT  
-- **DevOps:** Docker, Docker Compose  
-- **CI/CD:** GitHub Actions  
-- **Hosting:** AWS EC2 / Render / Vercel (whatever you used)
-
----
 ## **Architecture Diagram**
-<img width="1025" height="683" alt="image" src="https://github.com/user-attachments/assets/41382b86-be1c-4347-89fd-549f5f61773b" />
-
-```
-Frontend → Backend API → MongoDB
-Docker Compose → Multi‑container setup
-GitHub Actions → CI/CD pipeline
-```
+<img width="1025" height="683" alt="image" src="https://github.com/user-attachments/assets/703a5a70-a5e2-4cf7-8495-8b6596df65b1" />
 
 ---
-
-## 🛠️ **Prerequisites**
-
-Repo-Git
-Required Tools-
-Jenkins- Build and push code
-Trivy -Scan bugs
-Sonarqube- to scan the code
-Maven -dependencies to build jarfile
-Nexus Artifactory- to push the code
-Docker -to create docker image
-Trivy -Scan image
-
-## **How to Run Locally**
-Configured servers-
-Jenkins - ubuntu 24.04 LTS 
-java -21jdk
-SonarQube - as docker image
-Nexus-Artifactory - as docker image
+##🏗️ **Architecture Overview**
+```
+- **Frontend:** GitHub, Jenkins UI, SonarQube dashboard, Grafana, Public access domain URL
+- **Backend:** Maven, Trivy, Docker, Kubernetes, Terraform   
+- **DevOps:** Docker, Trivy, SonarQube
+- **CI/CD:** Jenkins
+- **Hosting:** AWS EC2 , AWS EKS, AWS VPC, Subnets, Load Balancer 
+```
+---
+##🛠️ **Prerequisites**
+Jenkins - Ubuntu 24.04 LTS 
+Java - 21jdk
+SonarQube - as a Docker image
+Nexus-Artifactory - as a Docker image
 Monitoring Tools- Grafana, Prometheus, blackbox
 Custom ports- 2000-11000
 
 ---
+
+## **How to Run Locally**
+
 ## 🚀**Deploy the Application**
 
 
