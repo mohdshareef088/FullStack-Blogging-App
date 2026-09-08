@@ -17,13 +17,13 @@ This is a full‑stack blogging application built with Jenkins, Docker, Terrafor
 ```
 ---
 ##🛠️ **Prerequisites**
-Ubuntu 24.04 LTS 
-Java 21 (OpenJDK)
-Jenkins - CI/CD  
-SonarQube - Docker container
-Nexus-Artifactory - Docker container
-Monitoring & Observability- Grafana, Prometheus, blackbox
-Custom ports- 2000-11000 required for Jenkins jobs & monitoring tools
+- **Ubuntu 24.04 LTS 
+- **Java 21 (OpenJDK)
+- **Jenkins - CI/CD  
+- **SonarQube - Docker container
+- **Nexus-Artifactory - Docker container
+- **Monitoring & Observability- Grafana, Prometheus, blackbox
+- **Custom ports- 2000-11000 required for Jenkins jobs & monitoring tools
 
 ---
 
