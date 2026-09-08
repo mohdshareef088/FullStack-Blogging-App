@@ -1,7 +1,35 @@
-mohdshareef88/FullStack-Blogging-App
+FullStack Blogging App – MERN + Docker + CI/CD
+
+ Project Overview
+
+This is a full‑stack blogging application built using React, Node.js, Express, and MongoDB. It allows users to create, edit, delete, and publish blog posts with authentication and role‑based access. The project is containerized using Docker and deployed using CI/CD pipelines.
+
+ Tech Stack
+List everything clearly:
+
+Frontend: React, TailwindCSS
+
+Backend: Node.js, Express.js
+
+Database: MongoDB
+
+Authentication: JWT
+
+DevOps: Docker, Docker Compose
+
+CI/CD: GitHub Actions
+
+Hosting: AWS EC2 / Render / Vercel (whatever you used)
+
+Architecture Diagram
 <img width="1025" height="683" alt="image" src="https://github.com/user-attachments/assets/41382b86-be1c-4347-89fd-549f5f61773b" />
 
-
+Project Structure
+Code
+/client      → React frontend
+/server      → Node.js backend
+/docker      → Dockerfiles & compose
+/.github     → CI/CD workflows
 Repo-Git
 Required Tools-
 Jenkins- Build and push code
