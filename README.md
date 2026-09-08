@@ -46,14 +46,15 @@ PORT=
 ---
 
 ## **Screenshots**
-Add 2–4 screenshots:
 
-- Homepage  
-- Create blog page  
-- Dashboard  
-- Login page  
+- Homepage  Dashboard 
+<img width="1908" height="970" alt="image" src="https://github.com/user-attachments/assets/e9962fb3-5ba8-474e-b71a-5885b93d2e2b" />
 
-Screenshots make the project look real.
+- registration page
+<img width="464" height="561" alt="image" src="https://github.com/user-attachments/assets/38d7ac0b-e2d2-42f0-b02e-2f84d38aa568" />
+
+- Create blog page 
+<img width="1888" height="787" alt="image" src="https://github.com/user-attachments/assets/8b37a1c2-a22b-4226-bfba-3e749a233d90" />
 
 ---
 
