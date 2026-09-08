@@ -1,35 +1,98 @@
-FullStack Blogging App – MERN + Docker + CI/CD
+##📘**FullStack Blogging App – CI/CD**
 
- Project Overview
+This is a full‑stack blogging application built using Jenkins +Docker +terraform +Kubernetes. It allows users to create, edit, delete, and publish blog posts with authentication and role‑based access. The project is containerized using Docker and deployed using CI/CD pipelines.
 
-This is a full‑stack blogging application built using React, Node.js, Express, and MongoDB. It allows users to create, edit, delete, and publish blog posts with authentication and role‑based access. The project is containerized using Docker and deployed using CI/CD pipelines.
+---
 
- Tech Stack
-List everything clearly:
+##🏗️**Architecture Overview**
 
-Frontend: React, TailwindCSS
+- **Frontend:** React, TailwindCSS  
+- **Backend:** Node.js, Express.js  
+- **Database:** MongoDB  
+- **Authentication:** JWT  
+- **DevOps:** Docker, Docker Compose  
+- **CI/CD:** GitHub Actions  
+- **Hosting:** AWS EC2 / Render / Vercel (whatever you used)
 
-Backend: Node.js, Express.js
-
-Database: MongoDB
-
-Authentication: JWT
-
-DevOps: Docker, Docker Compose
-
-CI/CD: GitHub Actions
-
-Hosting: AWS EC2 / Render / Vercel (whatever you used)
-
-Architecture Diagram
+---
+## **Architecture Diagram**
 <img width="1025" height="683" alt="image" src="https://github.com/user-attachments/assets/41382b86-be1c-4347-89fd-549f5f61773b" />
 
-Project Structure
-Code
-/client      → React frontend
-/server      → Node.js backend
-/docker      → Dockerfiles & compose
-/.github     → CI/CD workflows
+```
+Frontend → Backend API → MongoDB
+Docker Compose → Multi‑container setup
+GitHub Actions → CI/CD pipeline
+```
+
+---
+
+## 🛠️ **Prerequisites**
+
+Repo-Git
+Required Tools-
+Jenkins- Build and push code
+Trivy -Scan bugs
+Sonarqube- to scan the code
+Maven -dependencies to build jarfile
+Nexus Artifactory- to push the code
+Docker -to create docker image
+Trivy -Scan image
+
+## **How to Run Locally**
+Configured servers-
+Jenkins - ubuntu 24.04 LTS 
+java -21jdk
+SonarQube - as docker image
+Nexus-Artifactory - as docker image
+Monitoring Tools- Grafana, Prometheus, blackbox
+Custom ports- 2000-11000
+
+---
+## 🚀**Deploy the Application**
+
+
+
+
+## **Environment Variables**
+Show what is needed:
+
+```
+MONGO_URI=
+JWT_SECRET=
+PORT=
+```
+
+---
+
+## **Screenshots**
+Add 2–4 screenshots:
+
+- Homepage  
+- Create blog page  
+- Dashboard  
+- Login page  
+
+Screenshots make the project look real.
+
+---
+
+##**Live Demo**
+Add link:
+
+```
+https://yourapp.com
+```
+
+---
+
+PORT=
+```
+
+---
+
+### **📸 Screenshots**
+(Add images here)
+
 Repo-Git
 Required Tools-
 Jenkins- Build and push code
