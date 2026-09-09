@@ -68,12 +68,7 @@ README.md
 ---
 ## 🚀**Application Build & Deploy to Dockerhub**
 
-<img width="1580" height="734" alt="image" src="https://github.com/user-attachments/assets/d53a2aba-0243-4250-a82f-ca9649709ab3" />
-
-
-## Groovy script  
-
-   pipeline {
+    pipeline {
     agent any
 	
     tools {
