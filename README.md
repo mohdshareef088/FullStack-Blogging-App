@@ -194,10 +194,23 @@ To authenticate roles is working should return yes
 
 - Create blog page 
 <img width="1888" height="787" alt="image" src="https://github.com/user-attachments/assets/8b37a1c2-a22b-4226-bfba-3e749a233d90" />
-
 ---
 
 ## **Observibility**
+## Install
+- **install -- prometheus,blackbox_exporter, Grafana accesss throught separate ports 
+- **configure  -- add connection url to garafana datasources & import balckbox id to grafana dashboard
+---
+
+
+## **Screenshots**
+---
+
+<img width="1858" height="589" alt="image" src="https://github.com/user-attachments/assets/908607ee-a526-4b71-81f1-61c423ce0b73" />
+<img width="1888" height="938" alt="image" src="https://github.com/user-attachments/assets/acfaaff2-8e71-4a90-ae80-6eb6c744dcac" />
+<img width="1107" height="768" alt="image" src="https://github.com/user-attachments/assets/1370dc31-861a-4c03-bb32-07ed25001696" />
+<img width="1164" height="665" alt="image" src="https://github.com/user-attachments/assets/673dfc8c-fbf0-4313-aacd-590ec5c892a0" />
+
 ```
 
 
