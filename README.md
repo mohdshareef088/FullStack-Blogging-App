@@ -1,6 +1,6 @@
 ##📘 **FullStack Blogging App – CI/CD**
 
-This is a full‑stack blogging application built with Jenkins, Docker, Terraform, and Kubernetes. It allows users to create, edit, delete, and publish blog posts with authentication and role‑based access. The project is containerized using Docker and deployed using CI/CD pipelines.
+This is a full‑stack Java-based blogging application built with Jenkins, Docker, Terraform, and Kubernetes is a DevOps automation workflow. It allows users to create, edit, delete, and publish blog posts with authentication and role‑based access. The project is containerized using Docker automated with kubernetes and deployed using jenkins CI/CD pipelines.
 
 ---
 ## **Architecture Diagram**
@@ -9,40 +9,71 @@ This is a full‑stack blogging application built with Jenkins, Docker, Terrafor
 ---
 ##🏗️ **Architecture Overview**
 ```
-- **Frontend:** GitHub, Jenkins UI, SonarQube dashboard, Grafana, Public access domain URL
-- **Backend:** Maven, Trivy, Docker, Kubernetes, Terraform   
-- **DevOps:** Docker, Trivy, SonarQube
-- **CI/CD:** Jenkins
-- **Hosting:** AWS EC2, AWS EKS, AWS VPC, Subnets, Load Balancer 
+bash-scripts
+│install_jenkins.sh
+│install_docker.sh
+│install_blackbox.sh
+│prometheus.yml
+│grafana_dashboard.json
+kubernetes
+│deployment.yml
+│service.yml
+│role.yaml
+│rolebinding.yaml
+│serviceaccount.yaml
+terraform
+│main.tf
+│variables.tf
+│outputs.tf
+src
+│app.js
+│Dockerfile
+README.md
 ```
 ---
-##🛠️ **Prerequisites**
+##🛠️ **Prerequisites and tools used**
 - **Ubuntu 24.04 LTS 
 - **Java 21 (OpenJDK)
-- **Jenkins - CI/CD  
-- **SonarQube - Docker container
-- **Nexus-Artifactory - Docker container
-- **Monitoring & Observability- Grafana, Prometheus, blackbox
+- **Jenkins - CI/CD Continuous Integration and Continuous Deployment)
+- **SonarQube - Docker container (Static code analysis for quality and security checks)
+- **Nexus-Artifactory - Docker container (Artifact repository manager)
+- **Docker: Containerization of the application.
+- **Kubernetes (EKS): Orchestration of containerized applications.
+- **Monitoring & Observability- Grafana, Prometheus (application performance), Blackbox for availability and uptime.
 - **Custom ports- 2000-11000 required for Jenkins jobs & monitoring tools
-
 ---
 
-## 🚀**Application Deploy**
+## Executions
 
-docker run images 
-<img width="1226" height="163" alt="image" src="https://github.com/user-attachments/assets/d90884ac-75ca-4b79-8f0e-f7b9237fa401" />
-<img width="997" height="74" alt="image" src="https://github.com/user-attachments/assets/6c7ca432-5710-4e66-a09f-2befe2e74f78" />
+1. **GitHub Integration**:
+    - Jenkins pulls the latest changes from the GitHub repository and triggers
+2. **Jenkins Manage**:
+    - Adding tools token,urls,credentials(git,sonar,maven,docker) to Jenkins Manage (systems/tools) to trigger continuous integration 
+4. **Maven Build & Test**:
+   - The code is compiled and built using Maven into a .jar file
+5. **Code Quality Scan**:
+   - Code analysis is done using SonarQube.
+   - Trivy scans for vulnerabilities.
+6. **Docker & Nexus**:
+   - Jenkins builds a Docker image for the application.
+   - The image is tagged and pushed to DockerHub.
+   - Artifacts are pushed to Nexus.
+7. **Kubernetes Deployment**:
+   - The app is deployed to an EKS cluster.
+   - Kubernetes handles scaling and service management.
+8. **Monitoring**:
+   - Prometheus scrapes metrics from the Blackbox Exporter.
+   - Grafana visualizes application uptime, health, and other critical metrics.
+
 ---
+## 🚀**Application Build & Deploy to Dockerhub**
 
-## Manage Jenkins
+<img width="1580" height="734" alt="image" src="https://github.com/user-attachments/assets/d53a2aba-0243-4250-a82f-ca9649709ab3" />
 
-- ** Add Java and SonarQube with their credentials to Jenkins tools **
-- ** Nexus URL to pom.xml
-- ** Pushing image to Docker **  
 
 ## Groovy script  
 
-pipeline {
+   pipeline {
     agent any
 	
     tools {
