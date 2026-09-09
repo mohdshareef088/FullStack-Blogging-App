@@ -158,12 +158,12 @@ README.md
 ---
 ## **kubernetes deploy**
 ## Install
-eksctl  create cluster --name devopsshack-cluster --region ap-south-1
-kubectl create ns  webapps
-Svc -- creation to assign a service
-Role -- creation to assign to the service account in Jenkins
-Bind -- the role to the service account to perform the deployment to update it or delete it
-webapps secret -- for pulling the Docker image from my private registry and to be accessed  and utilized by Kubernetes to make pods of this image
+- **eksctl -- create eks cluster and update the config file 
+- **kubectl -- create namespace webapps 
+- **Svc -- create to assign a service nodeport
+- **Role -- creation to assign to the service account in Jenkins
+- **Bind -- the role to the service account to perform the deployment to update it or delete it
+- **webapps secret -- for pulling the Docker image from my private registry and to be accessed  and utilized by Kubernetes to make pods of this image
 
 
 <img width="1656" height="433" alt="image" src="https://github.com/user-attachments/assets/c5f2dc5e-5ab7-40f8-ae12-be647f96b98b" />
