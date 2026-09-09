@@ -13,7 +13,7 @@ This is a full‑stack blogging application built with Jenkins, Docker, Terrafor
 - **Backend:** Maven, Trivy, Docker, Kubernetes, Terraform   
 - **DevOps:** Docker, Trivy, SonarQube
 - **CI/CD:** Jenkins
-- **Hosting:** AWS EC2 , AWS EKS, AWS VPC, Subnets, Load Balancer 
+- **Hosting:** AWS EC2, AWS EKS, AWS VPC, Subnets, Load Balancer 
 ```
 ---
 ##🛠️ **Prerequisites**
@@ -119,11 +119,11 @@ pipeline {
             withDockerRegistry(credentialsId: 'docker-cred', url: 'https://index.docker.io/v1/') {
                 sh "docker push mohdshareef088/blogging-app:latest"
             }
-          }
-        }
+           }
+         }
+       }
       }
-    }
-   }
+     }
 
 <img width="1580" height="734" alt="image" src="https://github.com/user-attachments/assets/2c133e4f-dd7a-490a-a72d-4807f03a0631" />
 <img width="1355" height="495" alt="image" src="https://github.com/user-attachments/assets/d0ad76ca-b533-4fa7-8fd4-db86ae2bf99e" />
@@ -170,10 +170,7 @@ To authenticate roles is working should return yes
 
 ---
 
-##**Live Demo**
-Add link:
 
-```
 https://yourapp.com
 ```
 
