@@ -164,6 +164,7 @@ README.md
 - **Role -- creation to assign to the service account in Jenkins
 - **Bind -- the role to the service account to perform the deployment to update it or delete it
 - **webapps secret -- for pulling the Docker image from my private registry and to be accessed  and utilized by Kubernetes to make pods of this image
+- **pods -- to get the load balancer url to access the application
 
 
 <img width="1656" height="433" alt="image" src="https://github.com/user-attachments/assets/c5f2dc5e-5ab7-40f8-ae12-be647f96b98b" />
@@ -184,7 +185,7 @@ To authenticate roles is working should return yes
 ---
 
 ## **Screenshots**
-
+---
 - Homepage  Dashboard 
 <img width="1908" height="970" alt="image" src="https://github.com/user-attachments/assets/e9962fb3-5ba8-474e-b71a-5885b93d2e2b" />
 
@@ -196,8 +197,7 @@ To authenticate roles is working should return yes
 
 ---
 
-
-https://yourapp.com
+## **Observibility**
 ```
 
 
