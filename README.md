@@ -156,7 +156,7 @@ README.md
 <img width="1859" height="636" alt="image" src="https://github.com/user-attachments/assets/70c24df2-47e2-4270-a0ba-50d2709d21f5" />
 
 ---
-## **kubernetes deploy**
+## 🚀 **kubernetes deploy**
 ## Install
 - **eksctl -- create eks cluster and update the config file 
 - **kubectl -- create namespace webapps 
@@ -184,7 +184,7 @@ To authenticate roles is working should return yes
 
 ---
 
-## **Screenshots**
+##🧪 **Screenshots**
 ---
 - Homepage  Dashboard 
 <img width="1908" height="970" alt="image" src="https://github.com/user-attachments/assets/e9962fb3-5ba8-474e-b71a-5885b93d2e2b" />
@@ -196,14 +196,14 @@ To authenticate roles is working should return yes
 <img width="1888" height="787" alt="image" src="https://github.com/user-attachments/assets/8b37a1c2-a22b-4226-bfba-3e749a233d90" />
 ---
 
-## **Observibility**
+##🏁 **Observibility**
 ## Install
 - **install -- prometheus,blackbox_exporter, Grafana accesss throught separate ports 
 - **configure  -- add connection url to garafana datasources & import balckbox id to grafana dashboard
 ---
 
 
-## **Screenshots**
+##🧪 **Screenshots**
 ---
 
 <img width="1858" height="589" alt="image" src="https://github.com/user-attachments/assets/908607ee-a526-4b71-81f1-61c423ce0b73" />
